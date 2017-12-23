@@ -10,7 +10,7 @@ _CONSOLE_CURSOR_INFO cInfo;
 
 int main()
 {
-	SetConsoleTitleA(LPCSTR("Barber Simulator"));//test
+	SetConsoleTitleA(LPCSTR("Barber Simulator"));//testtest
 	system("chcp 65001");
 	system("cls");
 	bool b_state = false, flag = false;
