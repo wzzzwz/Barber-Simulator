@@ -40,11 +40,11 @@ int main()
 		passer <<= 1;
 		if (passer & 32 && queue != 6)
 		{
-			queue++;
+			queue=queue+1;
 			passer &= 65503;
 		}
 		if (flag)
-			passer += 1;
+			passer ++;
 		flag = false;
 		SetConsoleTextAttribute(hOut, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED);
 		cout << "    |";
@@ -56,9 +56,9 @@ int main()
 		}
 		else
 		{
-			SetConsoleTextAttribute(hOut, FOREGROUND_BLUE);
+			SetConsoleTextAttribute(hOut, FOREGROUND_RED);
 			WriteConsoleW(hOut, L"\u263a", 1, NULL, NULL);
-			SetConsoleTextAttribute(hOut, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED);
+			SetConsoleTextAttribute(hOut, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_RED);
 		}
 		cout << "     |    \n";
 		SetConsoleTextAttribute(hOut, FOREGROUND_GREEN);
