@@ -10,6 +10,7 @@ _CONSOLE_CURSOR_INFO cInfo;
 
 int main()
 {
+	//git test
 	SetConsoleTitleA(LPCSTR("Barber Simulator"));
 	system("chcp 65001");
 	system("cls");
